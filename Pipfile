@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+tensorflow = "*"
+torch = "*"
+torchvision = "*"
+numpy = "*"
+scipy = "*"
+matplotlib = "*"
+jupyterlab = "*"
+pandas = "*"
+numexpr = "*"
+bottleneck = "*"
+
+[requires]
+python_version = "3.6"
