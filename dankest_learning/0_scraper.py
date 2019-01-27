@@ -52,7 +52,7 @@ def scrape_memes(save_dir, num_templates, num_captions):
 def main():
     parser = argparse.ArgumentParser(description='Scrapes memegenerator.net for the most popular meme formats. ',
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('-d', '--save_dir', default='memes', type=str,
+    parser.add_argument('-d', '--save_dir', default='../memes', type=str,
                         help='Directory to save memes in.')
     parser.add_argument('-t', '--num_templates', type=int, default=200,
                         help='Number of different templates (formats) to download times 15.')
