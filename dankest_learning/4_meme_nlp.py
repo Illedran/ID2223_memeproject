@@ -12,7 +12,7 @@ def meme_nlp(meme_dir):
     p = Path(meme_dir)
     meme_files = list(p.glob('*.txt'))
     meme_files.sort(key=os.path.getmtime)
-    meme_files = list(map(lambda x: x.stem, meme_files))[:100]
+    meme_files = list(map(lambda x: x.stem, meme_files))[:2]
     splitter = re.compile(r"<sep>|\w+['`]\w+|\w+|\b[^\w\s]+|[^\w\s]", re.UNICODE | re.IGNORECASE)
 
     glove_embeddings = h5py.File('processed_data/glove_embeddings.hdf5')['glove_embeddings'][:]
